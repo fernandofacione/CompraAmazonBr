@@ -26,7 +26,7 @@ public class comprarProdPO {
 
     @Before
     public void iniciar(){
-        System.setProperty("webdriver.chrome.driver", "drivers/chrome/92/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "drivers/chrome/94/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(6000, TimeUnit.MILLISECONDS);
         driver.manage().window().maximize();
@@ -82,8 +82,8 @@ public class comprarProdPO {
         System.out.println("Passo 6");
     }
 
-    @Entao("^confirmo o nome do produto como \"([^\"]*)\" e o preco de \"([^\"]*)\" PO$")
-    public void confirmoONomeDoProdutoComoEOPrecoDePO(String arg0, String arg1)  {
+    @Entao("^confirmo produto no carrinho PO$")
+    public void confirmoONomeDoProdutoPO(String arg0, String arg1)  {
         System.out.println("Passo 7");
     }
 

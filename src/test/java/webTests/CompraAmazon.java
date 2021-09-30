@@ -73,30 +73,28 @@ public class CompraAmazon {
         driver.findElement(By.id("twotabsearchtextbox")).clear();                        // Limpa o campo de pesquisa
         logs.registrarCSV(casoDeTeste,"Limpou a caixa de pesquisa");
         driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Cafeteira Expresso Prima Latte II, Vermelho, 110v, Oster");  // Escreve o nome do produto no campo de pesquisa
-        logs.registrarCSV(casoDeTeste,"Digitou o nome do produto no campo de pesquisa");
+        logs.registrarCSV(casoDeTeste,"Abriu o site Amazon");
 
-        evidencias.print(driver, dataHora, casoDeTeste,"Passo 2 - Digitou Cafeteira Expresso Prima Latte II, Vermelho, 110v, Oster");
+        evidencias.print(driver, dataHora, casoDeTeste,"Passo 2 - Digitou o Nome do Produto e clicou na lupa");
         driver.findElement(By.id("nav-search-submit-button")).click();                   // Clique na lupa
-        logs.registrarCSV(casoDeTeste,"Clicou no botão da Lupa");
+        logs.registrarCSV(casoDeTeste,"Digitou produto no campo de pesquisa e clicou no botão Lupa");
 
         assertEquals(driver.findElement(By.cssSelector("h2")).getText(), "Cafeteira Expresso Prima Latte II, Vermelho, 110v, Oster");
         logs.registrarCSV(casoDeTeste,"Confirmou o texto indicativo da pesquisa do produto");
 
         evidencias.print(driver, dataHora, casoDeTeste,"Passo 3 - Exibiu a lista de produtos");
         driver.findElement(By.xpath("//html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[3]/div[2]/div[3]/div[1]/span[1]/div[1]/div[1]/span[1]/a[1]/div[1]/img[1]")).click();
-        logs.registrarCSV(casoDeTeste,"Exubiu o resultado da pesquisa");
+        logs.registrarCSV(casoDeTeste,"Exibiu o resultado da pesquisa");
 
         evidencias.print(driver, dataHora, casoDeTeste,"Passo 4 - Acessou o produto");
         driver.findElement(By.id("add-to-cart-button")).click();             // Clica no botão adicionar ao carrinho
-        logs.registrarCSV(casoDeTeste,"Clicou adicionar ao carrinho");
+        logs.registrarCSV(casoDeTeste,"Clicou sobre o produto a ser comprado");
 
         evidencias.print(driver, dataHora, casoDeTeste,"Passo 5 - Incluiu produto no carrinho");
         driver.findElement(By.id("nav-cart-count")).click();             // Clica no botão do carrinho de compras
-        logs.registrarCSV(casoDeTeste,"Clicou em ver o carrinho de compras");
+        logs.registrarCSV(casoDeTeste,"Clicou no botão Adicionar ao carrinho");
+        evidencias.print(driver, dataHora, casoDeTeste,"Passo 6 - Acessou o carrinho de compras");
 
-        evidencias.print(driver, dataHora, casoDeTeste,"Passo 5 - Incluiu produto no carrinho");
-        driver.findElement(By.id("nav-cart-count")).click();             // Clica no botão do carrinho de compras
-        logs.registrarCSV(casoDeTeste,"Clicou em ver o carrinho de compras");
 
         }
 

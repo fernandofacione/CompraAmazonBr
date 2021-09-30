@@ -39,6 +39,6 @@ public class Resultado {
     }
 
     public By verificarElemento() {
-        return By.cssSelector("h3");
+        return By.cssSelector("h2");
     }
 }

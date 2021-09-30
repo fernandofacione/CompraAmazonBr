@@ -42,7 +42,7 @@ public class CompraAmazon {
     @BeforeMethod
     public void iniciar(){
         // A - Início
-        System.setProperty("webdriver.chrome.driver", "drivers/chrome/93/chromedriver.exe"); // Aponta para onde está o driver do Chrome
+        System.setProperty("webdriver.chrome.driver", "drivers/chrome/94/chromedriver.exe"); // Aponta para onde está o driver do Chrome
         // Instancia o objeto driver como um controlador do Chrome
         driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(60000, TimeUnit.MILLISECONDS);

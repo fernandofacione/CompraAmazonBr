@@ -73,7 +73,7 @@ public class CompraAmazon {
         driver.findElement(By.id("twotabsearchtextbox")).clear();                        // Limpa o campo de pesquisa
         logs.registrarCSV(casoDeTeste,"Limpou a caixa de pesquisa");
         driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Cafeteira Expresso Prima Latte II, Vermelho, 110v, Oster");  // Escreve o nome do produto no campo de pesquisa
-        logs.registrarCSV(casoDeTeste,"Cafeteira Expresso Prima Latte II, Vermelho, 110v, Oster");
+        logs.registrarCSV(casoDeTeste,"Digitou o nome do produto no campo de pesquisa");
 
         evidencias.print(driver, dataHora, casoDeTeste,"Passo 2 - Digitou Cafeteira Expresso Prima Latte II, Vermelho, 110v, Oster");
         driver.findElement(By.id("nav-search-submit-button")).click();                   // Clique na lupa
@@ -89,6 +89,10 @@ public class CompraAmazon {
         evidencias.print(driver, dataHora, casoDeTeste,"Passo 4 - Acessou o produto");
         driver.findElement(By.id("add-to-cart-button")).click();             // Clica no botão adicionar ao carrinho
         logs.registrarCSV(casoDeTeste,"Clicou adicionar ao carrinho");
+
+        evidencias.print(driver, dataHora, casoDeTeste,"Passo 5 - Incluiu produto no carrinho");
+        driver.findElement(By.id("nav-cart-count")).click();             // Clica no botão do carrinho de compras
+        logs.registrarCSV(casoDeTeste,"Clicou em ver o carrinho de compras");
 
         evidencias.print(driver, dataHora, casoDeTeste,"Passo 5 - Incluiu produto no carrinho");
         driver.findElement(By.id("nav-cart-count")).click();             // Clica no botão do carrinho de compras

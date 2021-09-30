@@ -7,4 +7,4 @@ Funcionalidade: Comprar Produto PO
     Entao vejo a lista de resultados para o produto "Cafeteira Expresso Prima Latte II, Vermelho, 110v, Oster" PO
     Quando clico no Produto PO
     Quando clico em Adicionar ao Carrinho PO
-    Entao confirmo produto no carrinho "Cafeteira Expresso Prima Latte II, Vermelho, 110v, Oster" PO
+    Entao confirmo produto no carrinho PO

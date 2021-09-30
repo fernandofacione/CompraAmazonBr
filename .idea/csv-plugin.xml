@@ -17,7 +17,28 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\target\logs\log - 2021-09-29 22-24.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\target\logs\log - 2021-09-29 22-25.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\target\logs\log - 2021-09-29 22-27.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\target\logs\log - 2021-09-29 22-45.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />

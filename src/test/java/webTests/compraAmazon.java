@@ -12,7 +12,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import utils.Evidencias;
 import utils.Logs;
-
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -21,7 +20,7 @@ import java.util.concurrent.TimeUnit;
 import static org.testng.Assert.assertEquals;
 
 // 3 - Classe
-public class CompraAmazon {
+public class compraAmazon {
     // 3.1 - Atributos
 
     WebDriver driver;                           // declarar o objeto do Selenium WebDriver

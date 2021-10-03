@@ -79,11 +79,8 @@ public class CompraAmazon {
         driver.findElement(By.id("nav-search-submit-button")).click();                   // Clique na lupa
         logs.registrarCSV(casoDeTeste,"Digitou produto no campo de pesquisa e clicou no botão Lupa");
 
-        assertEquals(driver.findElement(By.cssSelector("h2")).getText(), "Cafeteira Expresso Prima Latte II, Vermelho, 110v, Oster");
-        logs.registrarCSV(casoDeTeste,"Confirmou o texto indicativo da pesquisa do produto");
-
         evidencias.print(driver, dataHora, casoDeTeste,"Passo 3 - Exibiu a lista de produtos");
-        driver.findElement(By.xpath("//html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[3]/div[2]/div[3]/div[1]/span[1]/div[1]/div[1]/span[1]/a[1]/div[1]/img[1]")).click();
+        driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[3]/div[2]/div[7]/div[1]/span[1]/div[1]/div[1]/span[1]/a[1]/div[1]/img[1]")).click();
         logs.registrarCSV(casoDeTeste,"Exibiu o resultado da pesquisa");
 
         evidencias.print(driver, dataHora, casoDeTeste,"Passo 4 - Acessou o produto");

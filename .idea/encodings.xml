@@ -6,6 +6,8 @@
     <file url="file://$PROJECT_DIR$/src/test/java/pages" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/test/java/utils" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/src/test/java/webTests" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/test/resources/features" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/test/resources/features/CompraAmazon.feature" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/test/resources/featuresPO" charset="windows-1252" />
     <file url="file://$PROJECT_DIR$/target" charset="windows-1252" />
   </component>

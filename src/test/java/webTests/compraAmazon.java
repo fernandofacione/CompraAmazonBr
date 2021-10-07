@@ -60,7 +60,7 @@ public class compraAmazon {
 
     @Test
     public void consultarProdutoAmazon() throws IOException {
-        String casoDeTeste = "Consultar Produto Cafeteira Expresso Prima Latte II, Vermelho, 110v, Oster";
+        String casoDeTeste = "cafeteira espresso, modo, 110v, vermelha, tres, 3 corações";
         // B - Realizar o teste
         logs.registrarCSV(casoDeTeste,"Iniciou o teste");
         driver.get("https://www.amazon.com.br");                              // Abre o site alvo informado
@@ -71,7 +71,7 @@ public class compraAmazon {
         logs.registrarCSV(casoDeTeste,"Clicou na caixa de pesquisa");
         driver.findElement(By.id("twotabsearchtextbox")).clear();                        // Limpa o campo de pesquisa
         logs.registrarCSV(casoDeTeste,"Limpou a caixa de pesquisa");
-        driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Cafeteira Expresso Prima Latte II, Vermelho, 110v, Oster");  // Escreve o nome do produto no campo de pesquisa
+        driver.findElement(By.id("twotabsearchtextbox")).sendKeys("cafeteira espresso, modo, 110v, vermelha, tres, 3 corações");  // Escreve o nome do produto no campo de pesquisa
         logs.registrarCSV(casoDeTeste,"Abriu o site Amazon");
 
         evidencias.print(driver, dataHora, casoDeTeste,"Passo 2 - Digitou o Nome do Produto e clicou na lupa");
@@ -79,7 +79,7 @@ public class compraAmazon {
         logs.registrarCSV(casoDeTeste,"Digitou produto no campo de pesquisa e clicou no botão Lupa");
 
         evidencias.print(driver, dataHora, casoDeTeste,"Passo 3 - Exibiu a lista de produtos");
-        driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[3]/div[2]/div[7]/div[1]/span[1]/div[1]/div[1]/span[1]/a[1]/div[1]/img[1]")).click();
+        driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[2]/div[1]/div[1]/div[1]/span[3]/div[2]/div[3]/div[1]/span[1]/div[1]/div[1]/span[1]/a[1]/div[1]/img[1]")).click();
         logs.registrarCSV(casoDeTeste,"Exibiu o resultado da pesquisa");
 
         evidencias.print(driver, dataHora, casoDeTeste,"Passo 4 - Acessou o produto");

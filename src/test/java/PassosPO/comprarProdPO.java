@@ -6,6 +6,8 @@ import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.E;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -53,7 +55,10 @@ public class comprarProdPO {
     @Quando("^pesquiso por \"([^\"]*)\" PO$")
     public void pesquisoPorProdutoPO(String produto)  {
         home.pesquisarProduto(produto);
-        System.out.println("Passo 2");
+        driver.findElement(By.id("twotabsearchtextbox")).click();                //Opcional
+        driver.findElement(By.id("twotabsearchtextbox")).clear();                //Opcional
+        driver.findElement(By.id("twotabsearchtextbox")).sendKeys(Keys.chord(produto)); // Nome do produto
+        System.out.println("2 - Digitou o nome do curso como " + produto);
     }
 
     @E("^clico na Lupa PO$")

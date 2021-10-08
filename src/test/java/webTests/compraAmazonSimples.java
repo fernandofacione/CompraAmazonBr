@@ -20,7 +20,7 @@ import java.util.concurrent.TimeUnit;
 import static org.testng.Assert.assertEquals;
 
 // 3 - Classe
-public class compraAmazon {
+public class compraAmazonSimples {
     // 3.1 - Atributos
 
     WebDriver driver;                           // declarar o objeto do Selenium WebDriver

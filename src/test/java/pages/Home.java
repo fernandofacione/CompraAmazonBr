@@ -31,10 +31,10 @@ public class Home {
     }
 
     // 3 - Funções e Métodos
-    public void pesquisarProduto(String curso){
+    public void pesquisarProduto(String produto){
         caixaPesquisa.click();            // clicar na caixa
         caixaPesquisa.clear();            // limpar a caixa
-        caixaPesquisa.sendKeys(curso);    // escrever na caixa
+        caixaPesquisa.sendKeys(produto);    // escrever na caixa
     }
     public void clicarLupa(){
         botaoProcurar.click();              // clicar no botão

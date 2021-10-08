@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
         plugin = {
                 "pretty",                                           // Formatação visual do Cucumber
                 "html:target/reports/extentreports",                // Saida HTML do Relatório Simples
-                "json:target/reports/extentreports.json"            // Saida Json com os dados
+                "json:target/reports/extentreports.json",            // Saida Json com os dados
         }
 
 )

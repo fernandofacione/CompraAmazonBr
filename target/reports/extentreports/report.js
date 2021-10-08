@@ -13,11 +13,11 @@ formatter.feature({
   "keyword": "Funcionalidade"
 });
 formatter.before({
-  "duration": 65200,
+  "duration": 68000,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1725701600,
+  "duration": 1730536400,
   "status": "passed"
 });
 formatter.scenario({
@@ -101,19 +101,19 @@ formatter.result({
   "status": "undefined"
 });
 formatter.after({
-  "duration": 30100,
+  "duration": 35400,
   "status": "passed"
 });
 formatter.after({
-  "duration": 595997700,
+  "duration": 586251601,
   "status": "passed"
 });
 formatter.before({
-  "duration": 45500,
+  "duration": 27499,
   "status": "passed"
 });
 formatter.before({
-  "duration": 1398420200,
+  "duration": 1366007500,
   "status": "passed"
 });
 formatter.scenario({
@@ -197,11 +197,11 @@ formatter.result({
   "status": "undefined"
 });
 formatter.after({
-  "duration": 26200,
+  "duration": 26300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 598284700,
+  "duration": 592939000,
   "status": "passed"
 });
 });

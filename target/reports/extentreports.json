@@ -1,0 +1,262 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: pt"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 65200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.iniciarPO()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1725701600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "comprarProdPO.iniciar()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Pesquisar Produto e Incluir no Carrinho",
+        "description": "",
+        "id": "comprar-produto-po;pesquisar-produto-e-incluir-no-carrinho",
+        "after": [
+          {
+            "result": {
+              "duration": 30100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.finalizarPO()"
+            }
+          },
+          {
+            "result": {
+              "duration": 595997700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "comprarProdPO.finalizar()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "que acesso o site da Amazon",
+            "match": {},
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "pesquiso por \"Cafeteira Single, Vermelho, 110v, Cadence\"",
+            "match": {},
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "clico na Lupa",
+            "match": {},
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "vejo a lista de resultados para o produto \"Cafeteira Single, Vermelho, 110v, Cadence\"",
+            "match": {},
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "clico sobre o produto definido",
+            "match": {},
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "clico adicionar produto no carrinho",
+            "match": {},
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "acesso carrinho de compras",
+            "match": {},
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "confirmo o nome do produto como \"Cafeteira Single, Vermelho, 110v, Cadence\" e o preco de \"R$ 97,79\"",
+            "match": {},
+            "keyword": "Entao "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 45500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.iniciarPO()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1398420200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "comprarProdPO.iniciar()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Pesquisar Produto com Enter e Incluir no Carrinho",
+        "description": "",
+        "id": "comprar-produto-po;pesquisar-produto-com-enter-e-incluir-no-carrinho",
+        "after": [
+          {
+            "result": {
+              "duration": 26200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.finalizarPO()"
+            }
+          },
+          {
+            "result": {
+              "duration": 598284700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "comprarProdPO.finalizar()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "que acesso o site da Amazon",
+            "match": {},
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "pesquiso por \"Cafeteira Single, Vermelho, 110v, Cadence\"",
+            "match": {},
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "pressiono Enter",
+            "match": {},
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "vejo a lista de resultados para o produto \"Cafeteira Single, Vermelho, 110v, Cadence\"",
+            "match": {},
+            "keyword": "Entao "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 18,
+            "name": "clico sobre o produto definido",
+            "match": {},
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 19,
+            "name": "clico adicionar produto no carrinho",
+            "match": {},
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 20,
+            "name": "acesso carrinho de compras",
+            "match": {},
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 21,
+            "name": "confirmo o nome do produto como \"Cafeteira Single, Vermelho, 110v, Cadence\" e o preco de \"R$ 97,79\"",
+            "match": {},
+            "keyword": "Entao "
+          }
+        ]
+      }
+    ],
+    "name": "Comprar Produto PO",
+    "description": "",
+    "id": "comprar-produto-po",
+    "keyword": "Funcionalidade",
+    "uri": "comprasAmazon.feature"
+  }
+]

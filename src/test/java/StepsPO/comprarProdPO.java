@@ -1,4 +1,4 @@
-package PassosPO;
+package StepsPO;
 
 import cucumber.api.java.After;
 import cucumber.api.java.Before;

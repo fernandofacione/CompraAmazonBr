@@ -28,5 +28,7 @@ test{
     useTestNG()
     filter {
         includeTestsMatching "*Runner*"
+        excludeTestsMatching "*apiTests*"
+        excludeTestsMatching "*unitTests*"
     }
 }
